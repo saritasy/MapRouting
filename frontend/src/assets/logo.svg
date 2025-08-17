@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <filter id="drop-shadow" x="-0.5" y="-0.5" width="2" height="2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Hub -->
+  <circle cx="50" cy="50" r="12" fill="#9B82E3" filter="url(#drop-shadow)"/>
+  <circle cx="50" cy="50" r="8" fill="white"/>
+
+  <!-- Spokes/Routes -->
+  <line x1="50" y1="50" x2="80" y2="20" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="20" y2="20" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="20" y2="80" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="80" y2="80" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="50" y2="15" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="50" y2="85" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="15" y2="50" stroke="#9B82E3" stroke-width="2"/>
+  <line x1="50" y1="50" x2="85" y2="50" stroke="#9B82E3" stroke-width="2"/>
+
+  <!-- Location Pins -->
+  <g transform="translate(77, 17)">
+    <path d="M3 0 C 1.34 0 0 1.34 0 3 C 0 5.25 3 8 3 8 C 3 8 6 5.25 6 3 C 6 1.34 4.66 0 3 0 Z" fill="#9B82E3"/>
+  </g>
+  <g transform="translate(17, 17)">
+    <path d="M3 0 C 1.34 0 0 1.34 0 3 C 0 5.25 3 8 3 8 C 3 8 6 5.25 6 3 C 6 1.34 4.66 0 3 0 Z" fill="#9B82E3"/>
+  </g>
+  <g transform="translate(17, 77)">
+    <path d="M3 0 C 1.34 0 0 1.34 0 3 C 0 5.25 3 8 3 8 C 3 8 6 5.25 6 3 C 6 1.34 4.66 0 3 0 Z" fill="#9B82E3"/>
+  </g>
+  <g transform="translate(77, 77)">
+    <path d="M3 0 C 1.34 0 0 1.34 0 3 C 0 5.25 3 8 3 8 C 3 8 6 5.25 6 3 C 6 1.34 4.66 0 3 0 Z" fill="#9B82E3"/>
+  </g>
+</svg>
